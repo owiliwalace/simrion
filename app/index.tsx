@@ -16,7 +16,6 @@ const index = () => {
             <View>
                 <Image 
                 source={require('../assets/images/favicon.png')}
-                resizeMode='cover'
                
                 />
             </View>
