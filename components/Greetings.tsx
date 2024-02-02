@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import FinanceReport from './financeReport';
 
 const Greetings = () => {
   const [greeting, setGreeting] = useState('');
@@ -18,17 +19,22 @@ const Greetings = () => {
 
   return (
     <View style={styles.container}>
+      <View>
+
           <Text style={styles.greetingText}
           
-          >{greeting}</Text>
+          >{greeting} </Text>
+          </View>
+          <FinanceReport/>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-        justifyContent: 'left',
-    alignItems: 'start',
+    
+     width:'50%',
+  
   },
   greetingText: {
     fontSize: 24,
