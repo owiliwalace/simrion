@@ -20,7 +20,8 @@ const Properties = () => {
       showsVerticalScrollIndicator={false}
       showsHorizontalScrollIndicator={false}
       sections={homes}
-      renderItem={({item})=>{
+      
+      renderItem={({item} )=>{
         return(
           <View>
                 <Pressable style={styles.PressableButton}
@@ -29,7 +30,9 @@ const Properties = () => {
     
       
       >
-         <Text>{item}</Text>
+       <Text>{item.label}</Text>
+       <Text>{item}</Text>
+         <Text>{item.value}</Text>
          
 
         </Pressable>

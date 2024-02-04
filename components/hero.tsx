@@ -2,10 +2,12 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Greetings from './Greetings'
 import Properties from './properties'
+import SideBar from './SideBar'
 
 const Hero = () => {
-  return (
+  return (<>
 <View style={[styles.profile]}>
+
     
       <Greetings />
                     <Properties />
@@ -13,6 +15,7 @@ const Hero = () => {
    
           
 </View>
+  </>
   )
 }
 
