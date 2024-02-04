@@ -1,28 +1,39 @@
 
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native'
-import { Stack, router } from 'expo-router'
-import Greetings from '../components/Greetings'
+import { Stack } from 'expo-router'
 import Footer from '../components/footer'
-import Properties from '../components/properties'
 import Hero from '../components/hero'
+import { Modal } from 'react-native'
+import TopLeft from '../components/topLeft'
+import SideBar from '../components/SideBar'
 
 const index = () => {
+  const [ sideBar,setSideBar]=useState(true);
+  
   
   return (
   <> 
     <Stack.Screen
+    
     options={{
        headerTitle:"",
        headerShadowVisible:false ,
-        
         headerLeft: () => (
             <View>
-                <Image 
-                source={require('../assets/images/favicon.png')}
-               
-                />
+             <View style={styles.profile}>
+              <TouchableOpacity //style={styles.profile}
+              onPress={()=>setSideBar(false)}>
+                <TopLeft/>
+                </TouchableOpacity>
+                    <TouchableOpacity>
+                      <Image       
+                      source={require('../assets/images/panther.jpg')}
+                      style={styles.topLeftImage}
+                      />
+                    </TouchableOpacity>
+              </View>          
             </View>
           ),
           headerRight: () => (
@@ -42,6 +53,9 @@ const index = () => {
     }
     />
     <SafeAreaView style={styles.SafeAreaview}>
+     
+    <SideBar 
+     />
        <Hero />
     </SafeAreaView>
     <Footer/>
@@ -50,14 +64,15 @@ const index = () => {
   )
 }
 
+
 export default index
 
 const styles = StyleSheet.create({
   
   image: {
     borderRadius: 55,
-    width: 40,
-    height: 40,
+    width: 50,
+    height: 50,
     borderColor:"gray",
     borderWidth:.3,
     marginRight:20
@@ -69,8 +84,8 @@ const styles = StyleSheet.create({
 
     notification: {
       borderRadius: 5,
-      width: 20,
-      height: 20,
+      width: 30,
+      height: 30,
       backgroundColor:"gray",
       marginRight:10,
       marginTop:10,
@@ -78,5 +93,32 @@ const styles = StyleSheet.create({
     },
     SafeAreaview:{
       height:"100%"
-    }
+    },
+    topLeftImage: {  
+      width: 60,
+      height: 60,
+      
+    },
+
+    modalContainer: {
+      height: "100%",
+      alignSelf: "",
+      //verticalAlign: "middle",
+      //horizontalAlign: "center",
+      marginTop: 0,
+      width: "35%",
+      borderRadius: 0,
+      //alignItems: 'center',
+      backgroundColor: 'rgba(200, 200, 230, 1)',
+    },
+    modalClose:{
+      cursor:"default", 
+      width:"65%"
+    },
+    closeText:{
+      fontSize:50
+    },
+    
+ 
+
 })

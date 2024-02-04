@@ -5,123 +5,22 @@
     }
     ,
      {
-        "type":"Mlolongo",
-        "data":["Tatu City","360"]
+        "label":"Mlolongo",
+        "data":["Tatu City","360"],
+        "value":["2","300"]
     }
-,    {
-        "type":"Mlolongo",
-        "data":["great wall","360"]
-    }
-    ,{
-        "id":"Mlolongo",
-        "data":["great wall","360"]
-    }
-    ,
-     {
-        "type":"Mlolongo",
-        "data":["Tatu City","360"]
-    }
-,    {
-        "type":"Mlolongo",
-        "data":["great wall","360"]
-    },{
-        "id":"Mlolongo",
-        "data":["great wall","360"]
-    }
-    ,
-     {
-        "type":"Mlolongo",
-        "data":["Tatu City","360"]
-    }
-,    {
-        "type":"Mlolongo",
-        "data":["great wall","360"]
-    },{
-        "id":"Mlolongo",
-        "data":["great wall","360"]
-    }
-    ,
-     {
-        "type":"Mlolongo",
-        "data":["Tatu City","360"]
-    }
-,    {
-        "type":"Mlolongo",
-        "data":["great wall","360"]
-    },{
-        "id":"Mlolongo",
-        "data":["great wall","360"]
-    }
-    ,
-     {
-        "type":"Mlolongo",
-        "data":["Tatu City","360"]
-    }
-,    {
-        "type":"Mlolongo",
-        "data":["great wall","360"],
-        "description":"a home for 700 peple"
-    },{
-        "id":"Mlolongo",
-        "data":["great wall","360"]
-    }
-    ,
-     {
-        "type":"Mlolongo",
-        "data":["Tatu City","360"]
-    }
-,    {
-        "type":"Mlolongo",
-        "data":["great wall","360"]
-    },{
-        "id":"Mlolongo",
-        "data":["great wall","360"]
-    }
-    ,
-     {
-        "type":"Mlolongo",
-        "data":["Tatu City","360"]
-    }
-,    {
-        "type":"Mlolongo",
-        "data":["great wall","360"]
-    },{
-        "id":"Mlolongo",
-        "data":["great wall","360"]
-    }
-    ,
-     {
-        "type":"Mlolongo",
-        "data":["Tatu City","360"]
-    }
-,    {
-        "type":"Mlolongo",
-        "data":["great wall","360"]
-    },{
-        "id":"Mlolongo",
-        "data":["great wall","360"]
-    }
-    ,
-     {
-        "type":"Mlolongo",
-        "data":["Tatu City","360"]
-    }
-,    {
-        "type":"Mlolongo",
-        "data":["great wall","360"]
-    },{
-        "id":"Mlolongo",
-        "data":["great wall","360"]
-    }
-    ,
-     {
-        "type":"Mlolongo",
-        "data":["Tatu City","360"]
-    }
-,    {
-        "type":"Mlolongo",
-        "data":["great wall","360"]
-    }
+   
     
 
 ]
+data = [
+    { "label": "Item 1", "value": "1" },
+    
+    { label: 'Item 2', value: '2' },
+    { label: 'Item 3', value: '3' },
+    { label: 'Item 4', value: '4' },
+    { label: 'Item 5', value: '5' },
+    { label: 'Item 6', value: '6' },
+    { label: 'Item 7', value: '7' },
+    { label: 'Item 8', value: '8' },
+  ];
