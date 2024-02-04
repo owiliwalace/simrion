@@ -11,26 +11,24 @@ import SideBar from '../components/SideBar'
 
 const index = () => {
   const [ sideBar,setSideBar]=useState(true);
-  
-  
+   
   return (
   <> 
     <Stack.Screen
-    
-    options={{
+       options={{
        headerTitle:"",
        headerShadowVisible:false ,
         headerLeft: () => (
             <View>
              <View style={styles.profile}>
               <TouchableOpacity //style={styles.profile}
-              onPress={()=>setSideBar(false)}>
+              onPress={()=>setSideBar(true)}
+               >
                 <TopLeft/>
                 </TouchableOpacity>
                     <TouchableOpacity>
-                      <Image       
+                      <Image    style={styles.topLeftImage}
                       source={require('../assets/images/panther.jpg')}
-                      style={styles.topLeftImage}
                       />
                     </TouchableOpacity>
               </View>          
@@ -53,9 +51,9 @@ const index = () => {
     }
     />
     <SafeAreaView style={styles.SafeAreaview}>
+    {sideBar ? <SideBar/>:null
+    }
      
-    <SideBar 
-     />
        <Hero />
     </SafeAreaView>
     <Footer/>
