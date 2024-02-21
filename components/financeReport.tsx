@@ -6,7 +6,7 @@ const FinanceReport = () => {
     <>
     <View>
       <Text style={styles.centerAlignment}>
-      FinanceReport
+      FinanceReport 
       </Text>
     </View>
     <View style={[styles.report,styles.centerAlignment]} >
