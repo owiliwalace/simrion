@@ -93,7 +93,7 @@ placeholder='password'/>
       <TouchableOpacity
                                   onPress={()=>setSignIn(false)} 
                                   style={[styles.submitBtn,styles.centerAlign]}>
-          <Text>SUMBIT</Text>
+          <Text>SUMBIT </Text>
         </TouchableOpacity>
         </View>
       <View>
