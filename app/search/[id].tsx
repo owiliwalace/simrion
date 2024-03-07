@@ -26,7 +26,7 @@ const Search = () => {
        // refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onrefresh}/>}
        >
 
-
+<Text> </Text>
         </ScrollView>
     
         
