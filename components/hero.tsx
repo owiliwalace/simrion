@@ -3,7 +3,7 @@ import React from 'react'
 import Greetings from './Greetings'
 import Properties from './properties'
 import SideBar from './SideBar'
-
+             
 const Hero = () => {
   return (<>
 <View style={[styles.profile]}>
