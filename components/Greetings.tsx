@@ -21,8 +21,9 @@ const Greetings = () => {
     <View style={styles.container}>
       <View>
 
+
           <Text style={styles.greetingText}
-          
+                  
           >{greeting} </Text>
           </View>
           <FinanceReport/>
@@ -32,7 +33,7 @@ const Greetings = () => {
 
 const styles = StyleSheet.create({
   container: {
-    
+         bbb
      width:'50%',
   
   },
