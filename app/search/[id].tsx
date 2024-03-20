@@ -1,4 +1,4 @@
-
+       
 import { RefreshControl, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React, { useCallback, useState } from 'react'
 import { SafeAreaView } from 'react-native'
