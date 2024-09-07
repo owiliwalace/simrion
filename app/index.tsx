@@ -8,7 +8,6 @@ import Hero from '../components/hero'
 import { Modal } from 'react-native'
 import TopLeft from '../components/topLeft'
 import SideBar from '../components/SideBar'
-
 const index = () => {
   const [ sideBar,setSideBar]=useState(true);
    
@@ -39,7 +38,6 @@ const index = () => {
                 <View style={styles.notification}>
              </View>
                 <View >
-                
                 <Image 
                 source={require('../assets/images/panther.jpg')}
                 style={styles.image}
@@ -61,12 +59,9 @@ const index = () => {
 
   )
 }
-
-
 export default index
 
 const styles = StyleSheet.create({
-  
   image: {
     borderRadius: 55,
     width: 50,
@@ -79,7 +74,6 @@ const styles = StyleSheet.create({
     display:'flex',
     flexDirection:"row"
   },
-
     notification: {
       borderRadius: 5,
       width: 30,
